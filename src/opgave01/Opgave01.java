@@ -1,5 +1,6 @@
 package opgave01;
 
+import opgave01.models.DoubleUp;
 import opgave01.models.TwoDimensionalIntArray;
 
 public class Opgave01 {
@@ -15,6 +16,12 @@ public class Opgave01 {
         System.out.println(twoDimensionalIntArray.getValueAt(2, 4));
         System.out.println(twoDimensionalIntArray.sumRow(1));
         System.out.println(twoDimensionalIntArray.sumColumn(3));
+        System.out.println(twoDimensionalIntArray.sumAll());
+        twoDimensionalIntArray.print();
+
+        DoubleUp doubleUp = new DoubleUp();
+        twoDimensionalIntArray.map(a -> a * 3);
+        System.out.println();
         twoDimensionalIntArray.print();
 
     }
